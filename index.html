@@ -1,62 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  
 <head>
-  <!--link href="assets/css/reset.css" rel="stylesheet"-->  <!--1. reset stylesheet (Meyer, E.)-->
-  <link href="assets/css/style.css" rel="stylesheet">  <!--2. custom stylesheet (custom)-->
+  <!--link href="assets/css/reset.css" rel="stylesheet"--><!--1. reset stylesheet (Meyer, E.)-->
+  <link href="assets/css/style.css" rel="stylesheet"><!--2. custom stylesheet (custom)-->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"><!-- 3. Boostrap 4.0 *beta* stylesheet-->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><!-- 3.5 Boostrap 3.3.7 stylesheet-->
   <!--link href="https://fonts.googleapis.com/css?family=Creepster|Open+Sans" rel="stylesheet"> <! Google Fonts-->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!-- 4. Boostrap/CSS/JS CDN script-->
-    <link href="assets/css/style.css" rel="stylesheet">  <!--2. custom stylesheet (custom)-->
 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script><!-- 4. Boostrap/CSS/JS CDN script-->
+  <link href="assets/css/style.css" rel="stylesheet"><!--2. custom stylesheet (custom)-->
   <title>IT'S GIF~TASTIC!</title>
 </head>
-
 <body>
   <div class="container-fluid main">
-      <div class="jumbotron container text-center">
-        <h1 class="title">GIF-TASTIC</h1>
-        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-<br/>
-        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-
-        <h3 class="sub-subtitle"><em>feel all the feels</em></h3>
-        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-        <h2 class="subtitle">EMO EDITION</h2>
-
-      </div>
-    <!-- inspiration-->
+    <div class="jumbotron container text-center">
+      <h1 class="title">GIF-TASTIC</h1>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .<br>
+      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      <h2 class="sub-subtitle"><em>feel all the feels</em></h2>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      <h2 class="subtitle">EMO EDITION</h2>
+    </div><!-- inspiration-->
     <div class="container row-center text-center instruct">
       <div class="col-md-2">
-        Need inspiration?
-        <button class="btn btn-block btn-instruct" data-target="#instructions" data-toggle="collapse" type="button">#emotion tags</button>
+        <button class="btn btn-block btn-instruct" data-target="#instructions" data-toggle="collapse" type="button">How it works</button>
       </div>
       <div class="collapse text-justify lead col-md-10" id="instructions">
-        <p>#angry #bored #pumped #jazzed #joy #disappointed #drunk #embarrassed #excited #frustrated #happy #hungry #suspicious #inspired #lonely #love #nervous #pain #relaxed #sad #sassy #scared #shocked #stressed #surprised #tired #unimpressed</p>
+        <h3 class="guide"><strong>Next Steps</strong></h3>
+        <p class="guide">Choose an emotion from the #emo tags below or get in touch with your <em>own</em> feelings (Recommended). However you chose to proceed, type that emotion in the box below to generate a button. Click that button to generate a series of images curated with <em>your feelings in mind.</em> Clicking on each image activates and/or deactivate the GIF.</p>
+        <hr>
+        <h3 class="emotags">Feeling apathetic?</h3>
+        <h4 class="emotags">Check out these common Giphy <em>#emo tags</em> for inspiration.</h4>
+        <p class="emotags">#angry #bored #pumped #jazzed #joy #disappointed #drunk #embarrassed #excited #frustrated #happy #hungry #suspicious #inspired #lonely #love #nervous #pain #relaxed #sad #sassy #scared #shocked #stressed #surprised #tired #unimpressed</p>
+        <hr>
       </div>
     </div>
-      <div class="container buttonBox">
-        <!-- input & search form below -->
-        <form class="navbar-form" id="gif-form" name="gif-form">
-          <button class="btn btn-default submit-btn" id="add-gif" type="submit">G E N E R A T E</button>
-          <!--div class="form-group"-->
-            <input class="form-control well-lg" id="gif-input" placeholder="Search an emotion" type="text">
-          <!--/div-->
-        </form> 
-        <!-- buttons rendered here -->
-        <div class="btn btn-group" id="buttons-view"></div>
-    </div>
-
-      <!-- gifs displayed here -->
-  <div class="container row-center col-md-12" id="gifs-view"></div>
- </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/javascript/logic.js"></script>
-
+    <div class="container buttonBox">
+      <!-- input & search form below -->
+      <form class="navbar-form" id="gif-form" name="gif-form">
+        <button class="btn btn-default submit-btn" id="add-gif" type="submit">GENERATE GIF</button> <!--div class="form-group"-->
+         <input class="form-control" id="gif-input" onfocus="this.value=' '" placeholder="Search an emotion" type="text"> <!--/div-->
+      </form><!-- buttons rendered here -->
+      <div class="btn btn-group" id="buttons-view"></div>
+    </div><!-- gifs displayed here -->
+    <div class="container row-center col-md-12" id="gifs-view"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript">
+  </script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script> 
+  <script src="assets/javascript/logic.js" type="text/javascript">
+  </script>
 </body>
 </html>
-
-
-

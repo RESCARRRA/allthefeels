@@ -1,116 +1,167 @@
- 
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Monoton');
-@import url('https://fonts.googleapis.com/css?family=Creepster|Open+Sans');
-
-body, html{
+ @import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Josefin+Sans:300|Monoton');
+ body, html {
   height: 100%;
-}
-.jumbotron, .main, .buttonBox, body, html{
+ }
+ .jumbotron, .main, .buttonBox, body, html {
   background-color: black;
-}
-
-.jumbotron{
-    border: 3px double goldenrod;
-}
-.title, h1 { 
+ }
+ .jumbotron {
+  border: 3px double goldenrod;
+ }
+ .title, h1 {
   font-family: 'Monoton';
   font-size: 200px;
   letter-spacing: .2em;
   color: goldenrod;
   text-shadow: 1px 1px snow;
-}
-.subtitle, h2 {
+ }
+ .subtitle {
   font-family: 'Josefin Slab', serif;
   font-size: 35px;
   letter-spacing: .2em;
   line-height: .6em;
   color: goldenrod;
-  text-shadow: 1px 1px silver;  
-}
-.sub-subtitle, h3{
+  text-shadow: 1px 1px silver;
+ }
+ .sub-subtitle {
   font-family: 'Josefin Slab', serif;
   font-size: 2em;
   line-height: .5em;
   color: silver;
-  text-shadow: 1px 2px goldenrod;  
-
-} 
-.forms {
+  text-shadow: 1px 2px goldenrod;
+ }
+ .forms {
   font-family: 'Josefin Slab', serif;
   color: goldenrod;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: .02em;
-}
-body, p {
+ }
+ body, p {
   /*font-family: 'Open Sans', sans-serif;*/
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Josefin Sans';
   color: goldenrod;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: .02em;
-}
-.gif, .btn{
+ }
+ .gif-input {
+  font-family: 'Josefin Slab';
+  color: black;
+  font-size: 16px;
+  letter-spacing: .02em;
+ }
+ .btn {
   margin: 5px;
   font-size: 18px;
-}
-.btn-instruct{
-  background-color: black;
-  border: 1px solid goldenrod;
+ }
+ .btn-instruct {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: 'Josefin Sans';
   color: snow;
-}
-.btn-instruct:hover{
+  padding: 7px;
+  border: 3px solid snow;
+  border-radius: 5px;
   background-color: black;
-  border: 1px solid goldenrod;
+  letter-spacing: .1em;
+ }
+ .btn-instruct:hover {
+  text-transform: uppercase;
+  color: snow;
+  text-shadow: 1px 1px goldenrod;
+  border: 3px solid goldenrod;
+  /*border: 3px double goldenrod;
+  color: silver;*/
+ }
+ .btn-instruct:active {
+  text-transform: uppercase;
+  color: snow;
+  text-shadow: 1px 1px goldenrod;
+  border: 3px solid goldenrod;
+  /*border: 3px double goldenrod;
+  color: silver;*/
+ }
+ .submit-btn {
+  font-size: 16px;
+  font-family: 'Josefin Sans';
   color: goldenrod;
-}
-.submit-btn {
-  font-size: 18px;
-  font-family: 'Monoton';
-  padding: 11.5px;
-  border: 2px solid #900C3F;
-}
-.submit-btn:hover {
-  font-size: 18px;
-  font-family: 'Monoton';
-  padding: 11.5px;
-  color: #900C3F;
-  text-shadow: 1px 1px black;
-  border: 2px solid #900C3F;
-}
-.btn-gif{
-  background-color: black ;
+  padding: 7px;
+  border: 3px solid goldenrod;
+  border-radius: 5px;
+  background-color: black;
+  letter-spacing: .2em;
+ }
+ .submit-btn:hover {
+  background-color: black;
+  color: goldenrod;
+  text-shadow: 1px 1px snow;
+  border: 3px solid snow;
+ }
+ .submit-btn:active {
+  background-color: black;
+  color: goldenrod;
+  text-shadow: 1px 1px snow;
+  border: 3px solid snow;
+ }
+ .btn-gif {
+  background-color: #900C3F;
   color: snow;
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+  padding: 5px;
   margin: 5px;
-  border-radius: 5px;
-  border: 2px solid goldenrod;
-}
-.btn-gif:hover {
-  background-color: black ;
-  color: #900C3F;
-  margin: 5px;
-  border-radius: 5px;
-  border: 2px solid #900C3F;
-}
-img {
+  border-radius: 25px;
+  border: 3px solid #581845;
+ }
+ .btn-gif:hover {
+  background-color: #581845;
+  border: 3px double #900C3F;
+  padding: 7px;
+ }
+ img {
   margin: 10px;
-}
-
-#gifs-view{
+ }
+ #gifs-view {
   background-color: black;
   border: 3px double goldenrod;
-
-}
-  #toggle {
-      width: 100%;
-      height: 100%;
-      background: #ccc;
-}  
-.instruct #instructions p {
-      padding: 0px 5px 5px 30px;
-      border-radius: 5px;
-      font-family: 'Josefin Slab', serif;
-      color: goldenrod;
-      font-size: 18px;
-      letter-spacing: .02em;
-}
+ }
+ #toggle {
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+ }
+ .emotags {
+  padding: 0px 5px 5px 30px;
+  border-radius: 5px;
+  color: goldenrod;
+  letter-spacing: .02em;
+ }
+ .guide {
+  padding: 0px 5px 5px 30px;
+  border-radius: 5px;
+  color: snow;
+  letter-spacing: .02em;
+ }
+ p.emotags {
+  font-family: 'Josefin Slab';
+  font-size: 18px;
+ }
+ h3.emotags {
+  font-family: 'Josefin Sans';
+  font-size: 20px;
+  font-weight: bold;
+ }
+ h4.emotags {
+  font-family: 'Josefin Sans';
+  font-size: 17px;
+ }
+ p.guide {
+  font-family: 'Josefin Slab';
+  font-size: 18px;
+ }
+ h3.guide {
+  font-family: 'Josefin Sans';
+  font-size: 20px;
+  font-weight: bold;
+ }
