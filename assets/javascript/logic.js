@@ -37,7 +37,7 @@ function displayGifInfo() {
     // * the data are presented (parameters listed in API documentation)
     // =================================================================================         
     for (var i = 0; i < 10; i++) {
-      var gifDiv = $("<div class='item text-center center col-md-6'>");
+      var gifDiv = $("<div class='item text-center center col-6'>");
       var rating = results[i].rating;
       var p = $("<p>").text("Rating: " + rating);
       var stillURL = results[i].images.fixed_height_still.url;
