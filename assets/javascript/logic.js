@@ -14,7 +14,7 @@ var gifs = [];
 // =================================================================================
 function displayGifInfo() {
   var gif = $(this).attr("data-name");
-  var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=jqPW22vugMUPU1YVX6Z2BobCgZPP1o52&limit=10";
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=jqPW22vugMUPU1YVX6Z2BobCgZPP1o52&limit=10";
 
   // =================================================================================
   // AJAX CALL 
