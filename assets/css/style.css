@@ -10,8 +10,8 @@
  }
  .title, h1 {
   font-family: 'Monoton';
-  font-size: 200px;
-  letter-spacing: .2em;
+ font-size: 450%;
+  letter-spacing: .17em;
   color: goldenrod;
   text-shadow: 1px 1px snow;
  }
@@ -119,8 +119,14 @@
   border: 3px double #900C3F;
   padding: 7px;
  }
- img {
-  margin: 10px;
+.item-img{
+  width: 320px;
+  margin: 5px;
+ }
+.item {
+  margin: 5px;
+  display: inline-block;
+  padding: 20px;
  }
  #gifs-view {
   background-color: black;

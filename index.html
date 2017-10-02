@@ -11,14 +11,15 @@
   <title>IT'S GIF~TASTIC!</title>
 </head>
 <body>
-  <div class="container-fluid main">
-    <div class="jumbotron container text-center">
+<div class="container main">
+    <div class="jumbotron  text-center">
       <h1 class="title">GIF-TASTIC</h1>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .<br>
       . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
       <h2 class="sub-subtitle"><em>feel all the feels</em></h2>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
       <h2 class="subtitle">EMO EDITION</h2>
-    </div><!-- inspiration-->
-    <div class="container row-center text-center instruct">
+    </div>
+    <!-- inspiration and instructions-->
+    <div class="container text-center instruct">
       <div class="col-2">
         <button class="btn btn-lg btn-instruct" data-target="#instructions" data-toggle="collapse" type="button">How it works</button>
       </div>
@@ -36,12 +37,15 @@
       <!-- input & search form below -->
       <form class="navbar-form" id="gif-form" name="gif-form">
         <button class="btn btn-lg submit-btn" id="add-gif" type="submit">GENERATE GIF</button> <!--div class="form-group"-->
-         <input class="form-control" id="gif-input" onfocus="this.value=' '" placeholder="Search an emotion" type="text"> <!--/div-->
-      </form><!-- buttons rendered here -->
+         <input class="form-control" id="gif-input" onfocus="this.value=' '" placeholder="Search an emotion" type="text"> 
+      </form>
+      <!-- buttons rendered here -->
       <div class="btn btn-group" id="buttons-view"></div>
-    </div><!-- gifs displayed here -->
-    <div class="container row-center col-12" id="gifs-view"></div>
-  </div> 
+    </div>
+    <!-- gifs displayed here -->
+    
+    <div class="container text-center" id="gifs-view"></div>
+</div> 
 
   <!-- JavaScript & jQuery -->
   <!-- ========================================= -->

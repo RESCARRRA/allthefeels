@@ -37,7 +37,7 @@ function displayGifInfo() {
     // * the data are presented (parameters listed in API documentation)
     // =================================================================================         
     for (var i = 0; i < 10; i++) {
-      var gifDiv = $("<div class='item text-center center col-6'>");
+      var gifDiv = $("<div class='item'>");
       var rating = results[i].rating;
       var p = $("<p>").text("Rating: " + rating);
       var stillURL = results[i].images.fixed_height_still.url;
@@ -46,12 +46,13 @@ function displayGifInfo() {
       gifImage.attr("data-still", stillURL);
       gifImage.attr("data-animate", animateURL);
       gifImage.attr("data-state", "still");
-      gifImage.addClass("gifResult");
+      gifImage.addClass("gifResult item-img img-responsive");
       gifDiv.append(gifImage);
+      gifDiv.prepend(p);
       $("#gifs-view").prepend(gifDiv);
-      gifDiv.prepend(gifImage,p);
-      $("#gifs-appear-here").prepend(gifDiv);
+      // $("#gifs-appear-here").prepend(gifDiv);
     }
+  
     // =================================================================================
     // ON CLICK: GIFs
     // Check if the variable state is equal to 'still',
