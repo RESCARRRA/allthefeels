@@ -94,7 +94,7 @@ function renderButtons() {
     a.text(gifs[i]);
     $("#buttons-view").append(a);
   }
-}
+} 
 // =================================================================================
 // ON CLICK: BUTTONS
 //  This function handles events when the generate buttonis clicked
